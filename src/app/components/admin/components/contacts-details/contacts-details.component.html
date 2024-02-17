@@ -1,0 +1,7 @@
+<p>contacts-details works!</p>
+<section *ngIf="user | async as user">
+  <h5>{{ user.name }}</h5>
+  <p>{{ user.email }}</p>
+  <p>{{ user.id }}</p>
+</section>
+<a [routerLink]="['../']">Go back</a>

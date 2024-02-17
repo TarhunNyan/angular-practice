@@ -1,0 +1,6 @@
+<p>contacts works!</p>
+<div *ngFor="let user of personalList | async">
+  <h5>{{ user.name }}</h5>
+  <div><a routerLink="./user/{{ user.id }}">Детали</a></div>
+<!--  <div><a [routerLink]="['user', user.id]">Детали</a></div>-->
+</div>

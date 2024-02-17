@@ -1,0 +1,14 @@
+<p>It is login page</p>
+<div>
+  <form [formGroup]="loginForm" (ngSubmit)="submitLogin()">
+    <label for="typeEmailX">Email</label>
+    <input formControlName="email" type="email" id="typeEmailX">
+    <p *ngIf="isValid('email') && isTouched('email')">Invalid email</p>
+
+    <label for="typePassX">Password</label>
+    <input formControlName="password" type="password" id="typePassX">
+    <p *ngIf="isValid('password') && isTouched('password')">Invalid password</p>
+
+    <button [disabled]="loginForm.invalid" type="submit" routerLink="../admin">Submit</button>
+  </form>
+</div>
