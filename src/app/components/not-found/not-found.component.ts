@@ -6,5 +6,5 @@ import { Component } from '@angular/core';
   styleUrl: './not-found.component.css'
 })
 export class NotFoundComponent {
-
+  someText: string = 'Text from code!'
 }

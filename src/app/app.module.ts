@@ -10,6 +10,11 @@ import { LoginComponent } from './components/login/login.component';
 import { NotFoundComponent } from './components/not-found/not-found.component';
 import { RouterModule } from '@angular/router';
 import { MainComponent } from './components/main/main.component';
+import { HighlightDirective } from './directive/highlight.directive';
+import { ReplaceTextDirective } from './directive/replace-text.directive';
+import { TodoComponent } from './standalone/todo/todo.component';
+import { CoreMenuComponent } from './standalone/todo/components/core-menu/core-menu.component';
+import { TodoElementComponent } from './standalone/todo/components/todo-element/todo-element.component';
 
 @NgModule({
             declarations: [
@@ -17,6 +22,8 @@ import { MainComponent } from './components/main/main.component';
               LoginComponent,
               NotFoundComponent,
               MainComponent,
+              HighlightDirective,
+              ReplaceTextDirective,
             ],
             imports: [
               BrowserModule,
@@ -25,6 +32,7 @@ import { MainComponent } from './components/main/main.component';
               RouterModule,
               ReactiveFormsModule,
               HttpClientModule,
+              TodoComponent
             ],
             providers: [
               provideClientHydration(),

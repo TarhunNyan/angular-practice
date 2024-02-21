@@ -1,0 +1,5 @@
+<div class="todo-element-wrapper">
+  <div class="title" [ngClass]="{'title-cross' : isDone}">{{title == "" ? "Введите название..." : title}}</div>
+  <div class="button button_delete" (click)="onDeleteElement()">Удалить</div>
+  <div class="button button_confirm" (click)="onReverserIsDone()">Сделать</div>
+</div>

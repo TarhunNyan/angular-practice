@@ -1,1 +1,14 @@
-<p>not-found works!</p>
+<p appHighlight>not-found works!</p>
+<p appReplaceText textReplace="Text from static attribute!" [codeTextReplace]="someText">not-found works!</p>
+<div>
+  Доступные переходы:
+  <ul>
+    <li>~/standalone-component - здесь todo-list, который выполнен как Standalone</li>
+    <li>~/ - переходит в main</li>
+    <li>~/main - типа главная страница</li>
+    <li>~/login - вход в админку</li>
+    <li>~/admin - админка, в которую не пускает поа не залогинишся</li>
+    <li>~/not-found - текущая страница</li>
+    <li>~/** - текущая страница</li>
+  </ul>
+</div>

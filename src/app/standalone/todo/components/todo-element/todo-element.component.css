@@ -1,0 +1,20 @@
+.todo-element-wrapper {
+  display: flex;
+  flex-direction: row;
+}
+
+.button_delete {
+  flex: 1;
+}
+
+.button_confirm {
+  flex: 1;
+}
+
+.title {
+  flex: 8;
+}
+
+.title-cross {
+  background-color: red;
+}

@@ -1,0 +1,20 @@
+<div class="wrapper">
+  <div class="top-block">
+
+    <div class="input-wrapper">
+      <input id="name" (keyup.enter)="pushInputText()" [(ngModel)]="inputText">
+    </div>
+    <div class="button-wrapper">
+      <div class="button" (click)="pushInputText()">Жми</div>
+    </div>
+  </div>
+  <div class="bottom-block">
+    <app-todo-element
+      (deleteElement)="removeElement(i)"
+      (reverserIsDone)="reverserIsDone(i)"
+      [title]="el.title"
+      [isDone]="el.isDone"
+      *ngFor="let el of elements; index as i"
+    ></app-todo-element>
+  </div>
+</div>

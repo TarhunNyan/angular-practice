@@ -6,6 +6,7 @@ import { MainComponent } from './components/main/main.component';
 import { NotFoundComponent } from './components/not-found/not-found.component';
 import { authGuard } from './guards/auth.guard';
 import { dauthGuard } from './guards/dauth.guard';
+import { TodoComponent } from './standalone/todo/todo.component';
 
 const routes: Routes = [
   {
@@ -20,6 +21,7 @@ const routes: Routes = [
   {path: 'main', component: MainComponent},
   {path: '', redirectTo: '/main', pathMatch: 'full'},
   {path: 'not-found', component: NotFoundComponent},
+  {path: 'standalone-component', component: TodoComponent},
   {path: '**', redirectTo: '/not-found', pathMatch: 'full'},
 ];
 
